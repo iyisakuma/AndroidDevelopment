@@ -74,35 +74,35 @@
         android:layout_marginLeft="16dp"
         app:layout_constraintStart_toEndOf="@+id/tv_bateria_label"
         app:layout_constraintTop_toTopOf="@id/tv_bateria_label"/>
-slkcjvsadlknvlsdk
+
     <TextView
         android:id="@+id/tv_potencia_label"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:text="Bateria"
-        app:layout_constraintTop_toBottomOf="@id/tv_preco_label"/>
+        android:text="Potencia"
+        app:layout_constraintTop_toBottomOf="@id/tv_bateria_label"/>
     <TextView
         android:id="@+id/tv_potencia_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="300 kwh"
+        android:text="300 CV"
         android:layout_marginLeft="16dp"
-        app:layout_constraintStart_toEndOf="@+id/tv_bateria_label"
-        app:layout_constraintTop_toTopOf="@id/tv_bateria_label"/>
+        app:layout_constraintStart_toEndOf="@+id/tv_potencia_label"
+        app:layout_constraintTop_toTopOf="@id/tv_potencia_label"/>
 
     <TextView
         android:id="@+id/tv_recarga_label"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:text="Recarga"
-        app:layout_constraintTop_toBottomOf="@id/tv_preco_label"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_potencia_label"/>
     <TextView
         android:id="@+id/tv_recarga_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="23 min"
         android:layout_marginLeft="16dp"
-        app:layout_constraintStart_toEndOf="@+id/tv_bateria_label"
-        app:layout_constraintTop_toTopOf="@id/tv_bateria_label"/>
+        app:layout_constraintStart_toEndOf="@+id/tv_recarga_label"
+        app:layout_constraintTop_toTopOf="@id/tv_recarga_label"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
