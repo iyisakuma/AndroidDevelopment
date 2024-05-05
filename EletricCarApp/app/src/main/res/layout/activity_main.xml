@@ -83,7 +83,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_bateria_label"/>
     <TextView
         android:id="@+id/tv_potencia_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="300 CV"
         android:layout_marginLeft="16dp"
@@ -105,4 +105,34 @@
         app:layout_constraintStart_toEndOf="@+id/tv_recarga_label"
         app:layout_constraintTop_toTopOf="@id/tv_recarga_label"/>
 
+    <EditText
+        android:id="@+id/et_khw"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="@string/pre_o_kmw"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/tv_recarga_label"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="@string/km_percorrido"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_khw"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"/>
+
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_calcular"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
