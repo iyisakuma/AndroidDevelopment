@@ -1,26 +1,26 @@
-package br.igor.eletriccarapp
+package br.igor.eletriccarapp.presentation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.isVisible
+import br.igor.eletriccarapp.R
 
-class MainActivity : AppCompatActivity() {
+class CalcularAutonomiaActivity : AppCompatActivity() {
 
     lateinit var et_km_percorrido : EditText
     lateinit var et_khw : EditText
     lateinit var bt_calcular : Button
     lateinit var tv_resultado : TextView
+    lateinit var iv_return : ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_calcular_autonomia)
         load()
         addListeners()
     }
@@ -30,10 +30,14 @@ class MainActivity : AppCompatActivity() {
         et_km_percorrido = findViewById(R.id.et_km_percorrido)
         bt_calcular = findViewById(R.id.bt_calcular)
         tv_resultado = findViewById(R.id.tv_resultado)
+        iv_return = findViewById(R.id.iv_return)
     }
-
     private fun addListeners(){
-        bt_calcular.setOnClickListener {calculaConsumo()
+        bt_calcular.setOnClickListener {
+            calculaConsumo()
+        }
+        iv_return.setOnClickListener{
+            finish()
         }
     }
 
@@ -47,4 +51,5 @@ class MainActivity : AppCompatActivity() {
         tv_resultado.visibility = View.VISIBLE
 
     }
+
 }

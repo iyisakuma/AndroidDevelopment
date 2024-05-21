@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_return"
+        android:layout_width="51dp"
+        android:layout_height="62dp"
+        android:src="@drawable/ic_return_foreground"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+    <TextView
+        android:id="@+id/tv_titulo_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Autonomia"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        app:layout_constraintTop_toBottomOf="@id/iv_return"/>
+
+    <EditText
+        android:id="@+id/et_khw"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="@string/pre_o_kmw"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_label"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/et_km_percorrido"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:hint="@string/km_percorrido"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_khw"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        app:layout_constraintTop_toBottomOf="@id/et_km_percorrido"/>
+
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_calcular"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

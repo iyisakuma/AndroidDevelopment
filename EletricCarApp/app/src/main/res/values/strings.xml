@@ -6,4 +6,8 @@
     <string name="pre_o_kmw">Preço KmW</string>
     <string name="km_percorrido">KM percorrido</string>
     <string name="calcular">Calcular</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_wifi">Ops, sem conexão com a internet ):</string>
+    <string name="response_error">tente novamente mais tarde\n</string>
 </resources>
